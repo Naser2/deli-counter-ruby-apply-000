@@ -1,4 +1,4 @@
-katz_deli = ["John", "Ben"]
+katz_deli = [line]
 
 
 def line(katz_deli)
@@ -21,12 +21,14 @@ def take_a_number(katz_deli, name)
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
-
+$$current_number = 0
 def now_serving(katz_deli)
-	  if katz_deli.empty? == true
-	    puts "There is nobody waiting to be served!"
-	  else
-	    name = katz_deli.shift
-	    puts "Currently serving #{name}."
-	  end
+	 $$current_number += 1
+	 $$current_number
+	 # if katz_deli.empty? == true
+	 #   puts "There is nobody waiting to be served!"
+	 # else
+	 #   name = katz_deli.shift
+	 #   puts "Currently serving #{name}."
+	 # end
 	end
