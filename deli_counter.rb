@@ -15,11 +15,13 @@ end
 
 line(katz_deli)
 
-
+  number = 1
 def take_a_number(katz_deli)
 
-  katz_deli =  [1,2,3,4,5]
-  katz_deli.last += 1
+
+  katz_deli =  []
+  katz_deli.push([number += 1])
+ 
   katz_deli.push(name)
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
